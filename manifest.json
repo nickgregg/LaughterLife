@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Laughter Life",
+  "version": "0.1",
+  "description":"A laughable attempt according to critics",
+  "author": "Dad",
+
+  "browser_action": {
+  "default_icon": "icon.png"
+},
+
+  	"content_scripts": [
+  	{
+    	"matches": [
+    	  "<all_urls>"
+   					 ],
+   			 "js": ["jquery.js","content.js"]
+  	}
+ 	],
+
+ 	
+"background": {
+  "scripts": ["background.js"]
+}
+
+
+}
+
